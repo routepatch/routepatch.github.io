@@ -26,7 +26,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 p {
@@ -194,7 +194,7 @@ input {
 .btn-conf {
   border-radius: 50px;
   margin-right: 15px;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 11px 28px 10px 28px;
@@ -250,12 +250,12 @@ hr {
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
-  font-size: 18px;
+  font-size: 27px;
 }
 
 .intro .main-title {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 81px;
   letter-spacing: 4px;
 }
 
@@ -273,8 +273,8 @@ hr {
 
 #blk {
   background: #181818;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 135px;
+  padding-top: 135px;
 }
 
 #blk h5 {
@@ -309,7 +309,7 @@ hr {
 
 .news {
   background-position: center;
-  background-image: url('../img/news-bg.jpg');
+  background-image: url('../img/predikciok.png');
   background-size: cover;
 }
 
@@ -595,7 +595,7 @@ nm {
 
 .column2 {
   float: left;
-  width: 33.24%;
+  width: 33.34%;
 }
 
 /* Clear floats after the columns */
@@ -604,21 +604,81 @@ nm {
   display: table;
   clear: both;
 }
-
+.row{
+	width: 100%
+}
 /*.row:after {
   /*content: "";
   display: table;
   clear: both;
 }*/
 
+
 .eu-block img {
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*right: 0;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	
 }
 
 .text-right {
-    /*text-align: right;
+    text-align: right;
 	float: right;
-    clear: both;*/
+    clear: both;
+	bottom: 0;
+    right: 0;
 }
+
+#footer {
+	background: #222222;
+    width: 100%;
+	padding: 20px 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hiventures {
+    width: 20.00%;
+}
+
+#eu {
+    width: 20.00%;
+}
+
+.main_test{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+	background: #222222;
+}
+
+.left_test {
+    position: relative;
+    background: #222222;
+	padding-left: 27px;
+    width:auto;
+    height: auto;
+}
+
+.right_test {
+    position: relative;
+    background: #222222;
+    width:auto;
+    height: auto;
+}
+
+@media screen and (min-width:1152px){
+  .main_test {
+      justify-content: space-between;
+  }
+
+  .left_test {
+      order:1;
+  }
+
+  .right_test {
+      order:2;
+  }
+}
+
+
